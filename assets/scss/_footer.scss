@@ -12,6 +12,7 @@
 
                 @include media-breakpoint-only(xs) {
                     text-align: center;
+                    padding-bottom: 20px;
                 }
             }
             
@@ -22,7 +23,7 @@
                     @include media-breakpoint-only(xs) {
                         justify-content: center;
                     }
-                    
+
                     li {
                         a {
                             padding: 0 20px;
@@ -44,12 +45,21 @@
         padding: 20px 0;
 
         &__column {
+
+            @include media-breakpoint-only(xs) {
+                margin-bottom: 25px;
+            }
+
             h2 {
                 color: #eff1f3;
                 font-weight: bold;
                 text-transform: capitalize;
                 margin-bottom: 20px;
                 letter-spacing: 0.8px;
+
+                @include media-breakpoint-only(xs) {
+                    margin-bottom: 10px;
+                }
             }
 
             ul {
