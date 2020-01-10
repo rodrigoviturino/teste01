@@ -8777,6 +8777,10 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   .footer__top__wrapper {
     padding: 40px 0;
     border-bottom: solid 1px #23415e; }
+    @media (max-width: 575.98px) {
+      .footer__top__wrapper__logo {
+        text-align: center;
+        padding-bottom: 20px; } }
     .footer__top__wrapper__redeSocial ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -8784,6 +8788,11 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end; }
+      @media (max-width: 575.98px) {
+        .footer__top__wrapper__redeSocial ul {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
       .footer__top__wrapper__redeSocial ul li a {
         padding: 0 20px;
         color: #bababa; }
@@ -8793,12 +8802,18 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 .footer__menu {
   background-color: #0a2b4c;
   padding: 20px 0; }
+  @media (max-width: 575.98px) {
+    .footer__menu__column {
+      margin-bottom: 25px; } }
   .footer__menu__column h2 {
     color: #eff1f3;
     font-weight: bold;
     text-transform: capitalize;
     margin-bottom: 20px;
     letter-spacing: 0.8px; }
+    @media (max-width: 575.98px) {
+      .footer__menu__column h2 {
+        margin-bottom: 10px; } }
   .footer__menu__column ul li a {
     color: #dadada;
     font-family: "Raleway", sans-serif;
@@ -8824,11 +8839,18 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
       color: #dadada;
       font-family: "Raleway", sans-serif;
       font-size: 1em; }
+      @media (max-width: 575.98px) {
+        .footer__copyright__wrapper__columnLeft {
+          text-align: center; } }
     .footer__copyright__wrapper__columnRight {
       text-align: right;
       color: #dadada;
       font-family: "Raleway", sans-serif;
       font-size: 1em; }
+      @media (max-width: 575.98px) {
+        .footer__copyright__wrapper__columnRight {
+          display: inline-block;
+          text-align: center; } }
 
 /* end Pages */
 /* end Theme */

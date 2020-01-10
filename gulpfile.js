@@ -22,9 +22,9 @@ function compilaSass(){
 };
 
 function javascript(){
-    return gulp.src(['./node_modules/bootstrap/dist/js/bootstrap.min.js', './assets/js/main.js'])
+    return gulp.src(['./node_modules/bootstrap/dist/js/bootstrap.min.js'],['./assets/js/*.js'])
         .pipe(concat('all.js'))
-        .pipe(minify())
+        .pipe(minifyJS())
         .pipe(gulp.dest('./assets/js/'))
         .pipe(browserSync.stream())
 };
@@ -44,7 +44,6 @@ function watch(){
     gulp.watch(['./assets/scss/*.scss', './assets/scss/**/*.scss'], compilaSass);
     // gulp.watch('./assets/scss/**/*.scss', 'compilaSass');
     gulp.watch('./assets/js/*.js', javascript);
-    gulp.watch('./assets/js/**/*.js', javascript);
 };
 
 gulp.task('default', gulp.parallel([compilaSass, javascript, browser,watch]));
