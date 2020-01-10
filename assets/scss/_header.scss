@@ -44,6 +44,10 @@
                     a {
                         margin: 0 30px;
                         color: #f2f2f2;
+
+                        &:hover {
+                            color: #EBA800;
+                        }
                     }
                 }
             }

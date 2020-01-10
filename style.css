@@ -8631,6 +8631,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         .header__rowTop__columnLeft ul li a {
           margin: 0 30px;
           color: #f2f2f2; }
+          .header__rowTop__columnLeft ul li a:hover {
+            color: #EBA800; }
   .header__rowTop__columnRight {
     padding: 10px 0 10px 50px;
     text-align: right; }
