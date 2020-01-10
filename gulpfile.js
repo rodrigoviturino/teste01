@@ -26,7 +26,6 @@ function javascript(){
         .pipe(concat('all.js'))
         .pipe(minifyJS())
         .pipe(gulp.dest('./assets/js/'))
-        .pipe(browserSync.stream())
 };
 
 function browser(){
