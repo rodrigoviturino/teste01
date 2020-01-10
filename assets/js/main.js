@@ -3,6 +3,7 @@ let btn_close = document.querySelector('.menu-close');
 
     btn_open.addEventListener('click', function(e){
         e.preventDefault();
+        
 
         this.add('opacity-0');
         document.querySelector('.header__rowBottom__nav__menu').classList.add('menuOpen');

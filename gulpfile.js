@@ -23,8 +23,8 @@ function compilaSass(){
 
 function javascript(){
     return gulp.src(['./node_modules/bootstrap/dist/js/bootstrap.min.js'],['./assets/js/*.js'])
-        .pipe(concat('all.js'))
         .pipe(minifyJS())
+        .pipe(concat('all.js'))
         .pipe(gulp.dest('./assets/js/'))
 };
 
