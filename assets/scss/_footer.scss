@@ -96,12 +96,21 @@
                 text-align: left;
                 color: #dadada;
                 @include type-1(16);
+
+                @include media-breakpoint-only(xs) {
+                    text-align: center;
+                }
             }
 
             &__columnRight {
                 text-align: right;
                 color: #dadada;
                 @include type-1(16);
+
+                @include media-breakpoint-only(xs) {
+                    display: inline-block;
+                    text-align: center;
+                }
             }
         }
     }
