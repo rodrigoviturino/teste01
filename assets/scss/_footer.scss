@@ -1,0 +1,87 @@
+.footer {
+    
+    &__top {
+        background-color: #0a2b4c;
+        padding: 40px 0;
+        
+        &__wrapper {
+            padding: 40px 0;
+            border-bottom: solid 1px #23415e;
+            
+            &__redeSocial {
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    li {
+                        a {
+                            padding: 0 20px;
+                            color: #bababa;
+                            &:hover {
+                                color:#eba800;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &__menu {
+        background-color: #0a2b4c;
+        padding: 20px 0;
+
+        &__column {
+            h2 {
+                color: #eff1f3;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+                letter-spacing: 0.8px;
+            }
+
+            ul {
+                li {
+                    a {
+                        color:#dadada;
+                        @include type-1(14);
+
+                        &:before {
+                            content: '';
+                            width: 0; 
+                            height: 0; 
+                            border-top: 5px solid transparent;
+                            border-bottom: 5px solid transparent;
+                            border-left: 6px solid #eba800;
+                            display: inline-block;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 40px 0;
+        background-color: #0a2b4c;
+        
+        &__wrapper {
+            border-top: solid 1px #23415e;
+            padding-top: 60px;
+
+            &__columnLeft {
+                text-align: left;
+                color: #dadada;
+                @include type-1(16);
+            }
+
+            &__columnRight {
+                text-align: right;
+                color: #dadada;
+                @include type-1(16);
+            }
+        }
+    }
+}
