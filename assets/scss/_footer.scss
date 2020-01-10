@@ -7,11 +7,22 @@
         &__wrapper {
             padding: 40px 0;
             border-bottom: solid 1px #23415e;
+
+            &__logo {
+
+                @include media-breakpoint-only(xs) {
+                    text-align: center;
+                }
+            }
             
             &__redeSocial {
                 ul {
                     display: flex;
                     justify-content: flex-end;
+                    @include media-breakpoint-only(xs) {
+                        justify-content: center;
+                    }
+                    
                     li {
                         a {
                             padding: 0 20px;
@@ -84,4 +95,5 @@
             }
         }
     }
+
 }
