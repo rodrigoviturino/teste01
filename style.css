@@ -8841,7 +8841,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
       font-size: 1em; }
       @media (max-width: 575.98px) {
         .footer__copyright__wrapper__columnLeft {
-          text-align: center; } }
+          text-align: center !important; } }
     .footer__copyright__wrapper__columnRight {
       text-align: right;
       color: #dadada;

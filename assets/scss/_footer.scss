@@ -98,7 +98,7 @@
                 @include type-1(16);
 
                 @include media-breakpoint-only(xs) {
-                    text-align: center;
+                    text-align: center !important;
                 }
             }
 
