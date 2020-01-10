@@ -8850,7 +8850,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
       @media (max-width: 575.98px) {
         .footer__copyright__wrapper__columnRight {
           display: inline-block;
-          text-align: center; } }
+          text-align: center !important; } }
 
 /* end Pages */
 /* end Theme */
