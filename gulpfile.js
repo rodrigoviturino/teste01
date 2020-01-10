@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const minifyJS = require('gulp-uglify');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
@@ -23,6 +24,7 @@ function compilaSass(){
 function javascript(){
     return gulp.src(['./node_modules/bootstrap/dist/js/bootstrap.min.js', './assets/js/main.js'])
         .pipe(concat('all.js'))
+        .pipe(minify())
         .pipe(gulp.dest('./assets/js/'))
         .pipe(browserSync.stream())
 };
