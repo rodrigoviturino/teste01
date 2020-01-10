@@ -42,7 +42,7 @@ function watch(){
     gulp.watch(['./template/*.html', './template/**/*.html']).on('change', browserSync.reload)
     gulp.watch(['./template-parts/*.html', './template-parts/*/*.html']).on('change', browserSync.reload);
     gulp.watch(['./assets/scss/*.scss', './assets/scss/**/*.scss'], compilaSass);
-    gulp.watch('./assets/js/*.js', javascript);
+    gulp.watch('./assets/js/*.js');
     // gulp.watch('./assets/scss/**/*.scss', 'compilaSass');
 };
 
