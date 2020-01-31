@@ -1,0 +1,193 @@
+.header {
+
+    &__rowTop {
+        background: rgb(34,34,34);
+        background: linear-gradient(135deg, rgba(34,34,34,1) 26%, rgba(34,34,34,1) 75%, rgba(235,168,0,1) 75%);
+
+        @include media-breakpoint-only(xs) {
+            display: none;
+        }
+
+        &__columnLeft {
+            padding: 10px 0;
+
+            ul {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    a {
+                        margin: 0 30px;
+                        color: $gray-100;
+
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__columnRight {
+            // padding: 10px 0 10px 50px;
+            text-align: right;
+
+            @include media-breakpoint-only(lg) {
+                @include responsive-font-size(12px);
+            }
+            @include media-breakpoint-only(md) {
+                @include responsive-font-size(12px);
+            }
+
+            p {
+                color: $white;
+                margin: 0;
+                font-weight: $font-weight-bold;
+                @include responsive-font-size(15px);
+            }
+        }
+    }
+
+    &__rowCenter {
+        background-color: $white;
+        padding: 30px 0;
+
+        &__logo {
+            @include media-breakpoint-only(xs) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        &__office {
+            ul {
+                display: flex;
+                align-items: center;;
+
+                li {
+                    margin-right: 10px;
+                    i {
+                        color: $yellow;
+                    }
+                    p {
+                        margin: 0;
+                        line-height: 21px;
+                        @include responsive-font-size(14px);
+
+                        &:nth-child(2){
+                            line-height: 14px;
+                            font-weight: bold;
+                            @include responsive-font-size(14px);
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        &__contact {
+
+            @include media-breakpoint-only(xs) { 
+                justify-content: flex-start !important;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-right: 10px;
+
+                    i {
+                        color: $yellow;
+                    }
+                    
+                    p {
+                        margin: 0;
+                        line-height: 21px;
+                        @include responsive-font-size(14px);
+
+                        &:nth-child(2){
+                            line-height: 14px;
+                            font-weight: bold;
+                            @include responsive-font-size(14px);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__rowBottom {
+        background-color: $blue;
+        padding: 15px 0;
+
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    a {
+                        color: $white;
+                        font-weight: $font-weight-bold;
+                        transition: $transition-base;
+                        font-size: $font-size-base;
+
+                        &:hover {
+                            transition: $transition-base;
+                            color: $gray-500;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__lang {
+            .wrapper {
+                margin-bottom: 0;
+
+                li {
+                   @include list-unstyled();
+
+                    .btn-group {
+
+                        .lang {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                // margin-right: 10px;
+                                margin-right: map-get($spacers, 1);
+                            }
+                        }
+                    }
+                    a {
+                        i {
+                            color: $yellow;
+                            transition: $transition-base;
+
+                            &:hover {
+                                transition: $transition-base;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                    button {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .opacity-0 {
+        opacity: 0;
+    }
+    .opacity-1 {
+        opacity: 1;
+    }
+
+}
