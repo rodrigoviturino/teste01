@@ -105,3 +105,75 @@ Menu Burgue
     //         display: none !important;
     //     }
     // }
+
+
+
+    /// menu
+    <div class="row align-items-center">
+               
+                <div class="col-md-4 col d-flex header__rowBottom__lang align-items-center justify-content-end">
+                    <button class="navbar-toggler collapsed d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <ul class="wrapper d-flex align-items-center">
+                        <li>
+                            <!-- Example single danger button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn lang"><img src="./images/icon-lang.png" alt="">USA Office</button>
+                                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                              </div>
+                        </li>
+
+                        <li class="mx-3">
+                            <a href="#">
+                                <i class="fas fa-shopping-cart "></i>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="#">
+                                <i class="fas fa-search "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="navbar navbar-expand-lg col-md-8">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                            </li>                    
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">COMPANY <span class="sr-only">(current)</span></a>
+                            </li>                    
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">CASES<span class="sr-only">(current)</span></a>
+                            </li>                    
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">NEWS<span class="sr-only">(current)</span></a>
+                            </li>                    
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">PAGES<span class="sr-only">(current)</span></a>
+                            </li>                    
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">SHOP<span class="sr-only">(current)</span></a>
+                            </li>                    
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">CONTACT<span class="sr-only">(current)</span></a>
+                            </li>                    
+                        
+                        </ul>
+                        
+                    </div>
+                </nav>
+
+            </div>

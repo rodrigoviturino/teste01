@@ -6,7 +6,7 @@
         
         &__wrapper {
             padding: 40px 0;
-            border-bottom: solid 1px $blue;
+            border-bottom: solid 1px $gray-700;
             align-items: center;
 
             &__logo {
@@ -49,7 +49,7 @@
     }
 
     &__menu {
-        background-color: #0a2b4c;
+        background-color: $blue;
         padding: 20px 0;
 
         &__column {
@@ -95,7 +95,7 @@
                             height: 0; 
                             border-top: 5px solid transparent;
                             border-bottom: 5px solid transparent;
-                            border-left: 6px solid #eba800;
+                            border-left: 6px solid $yellow;
                             display: inline-block;
                             margin-right: 6px;
                         }
@@ -211,10 +211,10 @@
 
     &__copyright {
         padding: 40px 0;
-        background-color: #0a2b4c;
+        background-color: $blue;
         
         &__wrapper {
-            border-top: solid 1px #23415e;
+            border-top: solid 1px $gray-700;
             padding-top: 60px;
 
             &__columnLeft {
