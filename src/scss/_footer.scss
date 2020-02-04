@@ -2,10 +2,14 @@
     
     &__top {
         background-color: $blue;
-        padding: 40px 0;
+        padding: map-get($spacers, 3) 0;
+
+        @include media-breakpoint-only(xs){
+            padding-top: map-get($spacers, 0);
+        }
         
         &__wrapper {
-            padding: 40px 0;
+            padding: map-get($spacers, 5) 0;
             border-bottom: solid 1px $gray-700;
             align-items: center;
 
@@ -13,7 +17,7 @@
 
                 @include media-breakpoint-only(xs) {
                     text-align: center;
-                    padding-bottom: 20px;
+                    padding-bottom: map-get($spacers, 3);
                 }
             }
             
@@ -25,12 +29,13 @@
 
                     @include media-breakpoint-only(xs) {
                         justify-content: center;
+                        margin: map-get($spacers, 0);
                     }
 
                     li {
 
                         &:nth-child(even) {
-                            padding: 0 20px;
+                            padding: 0 map-get($spacers, 3);
                         }
 
                         a {
@@ -55,18 +60,22 @@
         &__column {
 
             @include media-breakpoint-only(xs) {
-                margin-bottom: 25px;
+                margin-bottom: map-get($spacers, 3);
+                text-align: left;
+                justify-content: center;
+                display: flex;
+                align-items: center;
             }
 
             h5 {
                 color: $white;
                 font-weight: $font-weight-bold;
                 text-transform: capitalize;
-                margin-bottom: 25px;
+                margin-bottom: map-get($spacers, 3);
                 letter-spacing: 0.8px;
 
                 @include media-breakpoint-only(xs) {
-                    margin-bottom: 10px;
+                    margin-bottom: map-get($spacers, 1);
                 }
             }
 
@@ -77,7 +86,7 @@
                 li {
 
                     &:nth-child(even) {
-                        padding: 5px 0;
+                        padding: map-get($spacers, 1) 0;
                     }
 
                     a {
@@ -97,7 +106,7 @@
                             border-bottom: 5px solid transparent;
                             border-left: 6px solid $yellow;
                             display: inline-block;
-                            margin-right: 6px;
+                            margin-right:map-get($spacers, 2);
                         }
                     }
                 }
@@ -107,18 +116,19 @@
         &__columnInfos {
 
             @include media-breakpoint-only(xs) {
-                margin-bottom: 25px;
+                text-align: center;
+                margin: 0 auto map-get($spacers, 2);
             } 
 
             h5 {
                 color: $white;
                 font-weight: $font-weight-bold;
                 text-transform: capitalize;
-                margin-bottom: 25px;
+                margin-bottom: map-get($spacers, 3);
                 letter-spacing: 0.8px;
 
                 @include media-breakpoint-only(xs) {
-                    margin-bottom: 10px;
+                    margin-bottom: map-get($spacers, 2);
                 }
             }
 
@@ -129,11 +139,11 @@
                 li {
 
                     &:nth-child(even) {
-                        padding: 5px 0;
+                        padding: map-get($spacers, 1) 0;
                     }
 
                     i {
-                        padding-right: 5px;
+                        padding-right: map-get($spacers, 1);
                     }
 
                     a {
@@ -210,12 +220,20 @@
     }
 
     &__copyright {
-        padding: 40px 0;
+        padding: map-get($spacers, 4) 0;
         background-color: $blue;
+
+        @include media-breakpoint-only(xs) { 
+            padding: map-get($spacers, 4) 0 map-get($spacers, 4);
+        }
         
         &__wrapper {
             border-top: solid 1px $gray-700;
-            padding-top: 60px;
+            padding-top: map-get($spacers, 4);
+
+            @include media-breakpoint-only(xs) { 
+                padding-top: map-get($spacers, 4);
+            }
 
             &__columnLeft {
                 text-align: left;
@@ -235,6 +253,17 @@
                 @include media-breakpoint-only(xs) {
                     display: inline-block;
                     text-align: center !important;
+                }
+
+                a {
+                    color: $yellow;
+                    transition: all 0.7s;
+                    text-decoration: none;
+
+                    &:hover {
+                        transition: all 0.7s;
+                        color: $orange;
+                    }
                 }
             }
         }

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    src: local('fa brands 400');
+    src: url('./fa-brands-400.woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: local('fa regular');
+    src: url('./fa-regular-400.woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: local('fa solid');
+    src: url('./fa-solid-900.woff');
+    font-weight: 900;
+}
+
+/* 
+    Caso seja outro formato
+@font-face {
+    font-family: 'NomeFonte', sans-serif;
+    src: url('fonte.eot');
+    src: url('fonte.eot?#iefix') format('embedded-opentype'),
+    url('fonte.woff') format('woff'),
+    url('fonte.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+} */

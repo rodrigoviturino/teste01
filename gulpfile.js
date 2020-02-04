@@ -53,14 +53,14 @@ function styles() {
         .pipe(sass({
             includePaths: [
                 './node_modules/bootstrap/scss/',
-                './node_modules/@fortawesome/'
+                './node_modules/@fortawesome/fontawesome-free/scss/'
             ]
         }).on('error', sass.logError))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('./'))
-        .pipe(browserSync.stream({ match: 'src/scss/**/*.scss' }))
         .pipe(gulp.dest('./public'))
+        .pipe(browserSync.stream({ match: 'src/scss/**/*.scss' }))
         // .pipe(browserSync.stream());
 }
 
@@ -105,7 +105,7 @@ function images() {
 
 // Fonts
 function fonts() {
-    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    return gulp.src(['node_modules/@fortawesome/fontawesome-free/webfonts/*', 'src/fonts/*'])
         .pipe(sourcemaps.write('./'))
         .pipe(browserSync.stream({ match: 'node_modules/@fortawesome/fontawesome-free/webfonts/*' }))
         .pipe(gulp.dest('./public/fonts'));

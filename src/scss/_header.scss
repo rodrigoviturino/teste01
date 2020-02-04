@@ -3,25 +3,30 @@
     &__rowTop {
         background: rgb(34,34,34);
         background: linear-gradient(135deg, rgba(34,34,34,1) 26%, rgba(34,34,34,1) 75%, rgba(235,168,0,1) 75%);
+        padding: map-get($spacers, 2) 0;
 
         @include media-breakpoint-only(xs) {
-            display: none;
+            background: linear-gradient(135deg,#222 26%,#222 53%,#eba800 53%);
         }
 
         &__columnLeft {
-            padding: 10px 0;
+            // padding: 10px 0;
 
             ul {
                 display: flex;
                 align-items: center;
-                margin: 0;
-                padding: 0;
+                margin: map-get($spacers, 0);
+                padding: map-get($spacers, 0);
 
                 li {
                     display: flex;
                     a {
-                        margin: 0 30px;
+                        margin: 0 map-get($spacers, 3);
                         color: $gray-100;
+
+                        @include media-breakpoint-only(xs) {
+                            margin: 0 map-get($spacers, 2);
+                        }
 
                         &:hover {
                             color: $yellow;
@@ -38,27 +43,37 @@
             @include media-breakpoint-only(lg) {
                 @include responsive-font-size(12px);
             }
+
             @include media-breakpoint-only(md) {
                 @include responsive-font-size(12px);
             }
 
             p {
                 color: $white;
-                margin: 0;
+                margin: map-get($spacers, 0);
                 font-weight: $font-weight-bold;
                 @include responsive-font-size(15px);
+
+                @include media-breakpoint-only(xs) {
+                    @include responsive-font-size(12px);
+                }
+    
             }
         }
     }
 
     &__rowCenter {
         background-color: $white;
-        padding: 30px 0;
+        padding: map-get($spacers, 4) 0;
+
+        .wrapper {
+            margin: 0 auto;
+        }
 
         &__logo {
             @include media-breakpoint-only(xs) {
                 text-align: center;
-                padding-bottom: 20px;
+                padding-bottom: map-get($spacers, 4);
             }
         }
 
@@ -68,7 +83,7 @@
                 align-items: center;;
 
                 li {
-                    margin-right: 10px;
+                    margin-right: map-get($spacers, 2);
                     i {
                         color: $yellow;
                     }
@@ -99,14 +114,14 @@
                 align-items: center;
 
                 li {
-                    margin-right: 10px;
+                    margin-right: map-get($spacers, 2);
 
                     i {
                         color: $yellow;
                     }
                     
                     p {
-                        margin: 0;
+                        margin: map-get($spacers, 0);
                         line-height: 21px;
                         @include responsive-font-size(14px);
 
@@ -124,7 +139,7 @@
 
     &__rowBottom {
         background-color: $blue;
-        padding: 15px 0;
+        padding: map-get($spacers, 3) 0;
 
         .navbar {
             // .navbar-nav {
@@ -143,32 +158,58 @@
                 // }
             
 
+                .navbar-nav {
+                    .nav-item {
+                        a {
+                            color: $white;
+                            font-weight: $font-weight-bold;
+                            text-transform: uppercase;
+                            transition: $transition-base;
+                            @include responsive-font-size(16px);
+
+                            &:hover {
+                                transition: $transition-base;
+                                color: $gray-300;
+                            }
+                        }
+                    }
+                }
+
                 .wrapper {
-                    margin-bottom: 0;
+                    margin-bottom: map-get($spacers, 0);
     
                     @include media-breakpoint-only(xs) { 
                         width: 77%;
                         list-style: none;
-                        padding: 0 !important;
-                        margin: 0 !important;
+                        padding: map-get($spacers, 0) !important;
+                        margin: map-get($spacers, 0) !important;
                     }
 
                     li {
-                            @include list-unstyled();
+                        @include list-unstyled();
         
                             .btn-group {
                                 
+                                .dropdown-toggle-split {
+                                    padding-left: map-get($spacers, 0);
+                                }
+
                                 .lang {
                                     display: flex;
                                     align-items: center;
-                                    font-size: 11px;
+                                    @include responsive-font-size(14px);
+
+                                    @include media-breakpoint-only(xs) {
+                                        @include responsive-font-size(11px);
+                                    }
         
                                     img {
                                         // margin-right: 10px;
-                                        margin-right: map-get($spacers, 0);
-        
+                                        margin-right: map-get($spacers, 2);
+
                                         @include media-breakpoint-only(xs) {
-                                            margin-right: 5px;
+                                            margin-right: map-get($spacers, 1);
+                                            
                                         }        
                                     }
                                 }
